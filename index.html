@@ -9,18 +9,52 @@
 <body>
     <div class="container" id="main">
         <div class="container" id="left">
-            <div id="top">
-                Div Top
-            </div>
+            <div id="top"></div>
             <div id="mid">
-                Div Mid
+                <img id="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"/>
+                <div id="logo-text">ODIN</div>
             </div>
-            <div id="bot">
-                Div Bot
-            </div>
-            <footer>Footer</footer>
+            <div id="bot"></div>
+            <footer> <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p></footer>
         </div>
-        <div class="container" id="right">yo</div>
+        <div class="container" id="right">
+            <p id="desc">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br><br> You <em>know</em> you want to.</p>
+            <form>
+                <div class="container form">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name">
+                </div>
+
+                <div class="container form">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name">
+                </div>
+
+                <div class="container form">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+
+                <div class="container form">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone">
+                </div>
+
+                <div class="container form">
+                    <label for="password">Password</label>
+                    <input type="text" id="password">
+                </div>
+
+                <div class="container form">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="text" id="confirm_password">
+                </div>
+            </form>
+            <div id="sign-in">
+                <button>Create Account</button>
+                <p>Already have an account? <a>Log in</a></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

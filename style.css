@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(font/Norse-Bold.otf);
+}
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -7,6 +12,10 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0px;
+}
+
+div {
+    display: flex;
 }
 
 .container {
@@ -19,14 +28,32 @@ html, body {
     background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     flex-direction: column;
+    max-width: 30%;
 }
 
-#top {
+#left #top {
     flex-basis: 25%;
 }
 
 #mid {
     flex-basis: 20%;
+    background-color: rgba(19, 19, 20, 0.5);
+    color: white;
+    justify-content: center;
+    display: flex;
+    max-height: 30%;
+}
+
+#logo {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+#logo-text {
+    font-family: Norse-Bold, Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    font-size: 10vw;
 }
 
 #bot {
@@ -34,9 +61,72 @@ html, body {
 }
 
 footer {
+    color: white;
+    display: flex;
     flex-basis: 5%;
+    justify-content: center;
+    align-items: end;
+    opacity: 75%;
+
+    a {
+        color: white;
+    }
+
 }
 
 #right {
-    flex-basis  : 60%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#desc {
+    padding: 32px;
+    max-width: 70%;
+    height: auto;
+    font-size: 3vh;
+    font-weight: 450;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: max-content;
+}
+
+.form {
+    flex-direction: column;
+    max-width: 35%;
+    height: auto;
+    padding: 8px;
+    padding-left: 64px;
+}
+
+label {
+    max-width: fit-content;
+    padding-bottom: 8px;
+}
+
+input {
+    max-width: 80%;
+    height: 3vh;
+}
+
+button {
+    max-width: fit-content;
+    height: auto;
+    background-color: rgb(98, 138, 98);
+    color: white;
+    padding: 8px 16px;
+}
+
+#sign-in {
+    flex-direction: column;
+    padding: 32px;
 }

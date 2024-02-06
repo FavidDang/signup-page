@@ -90,13 +90,23 @@ footer {
     font-weight: 450;
 }
 
+#main-content {
+    background-color: white;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+}
+
 form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: white;
-    padding-top: 16px;
-    padding-bottom: 16px;
     max-width: max-content;
 }
 
@@ -105,25 +115,51 @@ form {
     max-width: 35%;
     height: auto;
     padding: 8px;
-    padding-left: 64px;
 }
 
 label {
     max-width: fit-content;
     padding-bottom: 8px;
+    color: rgb(61, 61, 61);
 }
 
 input {
     max-width: 80%;
     height: 3vh;
+    border-color: #E5E7EB;
+    box-shadow: none;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+input[type="text"]:focus {
+    outline: 1px solid lightskyblue;
+    box-shadow: 2px 2px rgb(204, 204, 204);
+}
+
+.error {
+    outline: 1px solid red;
+}
+
+#submit {
+    background-color: rgb(204, 204, 204);
 }
 
 button {
     max-width: fit-content;
     height: auto;
-    background-color: rgb(98, 138, 98);
+    background-color: #596D48;
     color: white;
-    padding: 8px 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-size: 2vh;
+    box-shadow: none;
+    border: none;
+} 
+
+button:hover {
+    cursor: pointer;
 }
 
 #sign-in {
